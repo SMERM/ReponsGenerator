@@ -25,7 +25,8 @@ module ReponsGenerator
       fn = NOTES
       @orig_row = []
       while (!fn.empty?)
-        idx = (rand()*fn.size-1).round
+byebug
+        idx = (rand()*(fn.size-1)).round
         @orig_row << fn.delete(idx)
       end
     end
