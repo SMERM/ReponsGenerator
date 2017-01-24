@@ -1,13 +1,13 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ReponsGenerator/version'
+require 'repons_generator/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ReponsGenerator"
   spec.version       = ReponsGenerator::VERSION
-  spec.authors       = ["Nicola Bernardini"]
-  spec.email         = ["nicb@sme-ccppd.org"]
+  spec.authors       = ["The TR-2014-2015 team"]
+  spec.email         = ["smerm-studenti@googlegroups.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
   spec.description   = %q{TODO: Write a longer description or delete this line.}
