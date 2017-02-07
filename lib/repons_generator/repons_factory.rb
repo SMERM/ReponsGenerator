@@ -1,6 +1,13 @@
+require 'singleton'
 module ReponsGenerator
 
+	# un oggetto +Note+ è composto da un oggetto +Acciaccatura+
+	# e un oggetto +LongNote+
+	# un oggetto +Chord+ è composto da un array di oggetti +Note+
+
 	class ReponsFactory
+
+		include Singleton 
 
 	  attr_reader :row, :index
 
@@ -9,25 +16,24 @@ module ReponsGenerator
 			@index = 0
 	  end
 
-	  def note
+	  def next_note
 			self.row[self.index]
 			bump_index
 	  end
 
-
-	  def repons_chord
-
-	  end
-
-	  def repons_note
+	  def chord
 
 	  end
 
-	  def repons_long
+		def note
+
+		end
+
+	  def long_note
 
 	  end
 
-	  def repons_acciaccatura
+	  def acciaccatura
 
 	  end
 
