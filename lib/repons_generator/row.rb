@@ -14,7 +14,8 @@ module ReponsGenerator
 
     def transpo(t = nil)
       t = (rand()*22-11).round unless t
-      self.orig_row.map{ |n| (n+t)%12 }
+      Row.new(self.orig_row.map{ |n| (n+t)%12 })
+      # inizializza un'altra row con la trasposizione
     end
 
     def [](idx)
