@@ -22,12 +22,11 @@ module ReponsGenerator
     NOTES=[0,1,2,3,4,5,6,7,8,9,10,11]
   
     def build_row
-      fn = NOTES
+      fn = NOTES.dup
       @orig_row = []
       while (!fn.empty?)
-byebug
         idx = (rand()*(fn.size-1)).round
-        @orig_row << fn.delete(idx)
+        @orig_row << fn.delete_at(idx)
       end
     end
   
